@@ -16,4 +16,13 @@ map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]ui
 -- or just use <C-\><C-n> to exit terminal mode
 map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
+-- easy escape
 map('i', 'jk', '<Esc>', { desc = 'Exit insert mode on jk' })
+
+-- tab navigation
+map('n', '<Tab>', 'gt', { desc = 'Navigate to tab right' })
+map('n', '<S-Tab>', 'gT', { desc = 'Navigate to tab left' })
+map('n', '<leader>x', '<Cmd>tabc<CR>', { desc = 'Close current tab' })
+
+-- NeoTree
+map('n', '<C-n>', '<Cmd>Neotree toggle<CR>')
