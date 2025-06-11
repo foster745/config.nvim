@@ -45,6 +45,9 @@ return {
     },
     nesting_rules = {},
     filesystem = {
+      filtered_items = {
+        hide_gitignored = true,
+      },
       hijack_netrw_behavior = 'disabled',
       window = {
         mappings = {
@@ -53,6 +56,11 @@ return {
           ['H'] = 'toggle_hidden',
           ['/'] = 'fuzzy_finder',
           ['fd'] = 'fuzzy_finder_directory',
+        },
+        fuzzy_finder_mappings = {
+          ['<C-j>'] = 'move_cursor_down',
+          ['<C-k>'] = 'move_cursor_up',
+          ['<esc>'] = 'close',
         },
       },
     },

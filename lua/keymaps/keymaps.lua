@@ -25,4 +25,10 @@ map('n', '<S-Tab>', 'gT', { desc = 'Navigate to tab left' })
 map('n', '<leader>x', '<Cmd>tabc<CR>', { desc = 'Close current tab' })
 
 -- NeoTree
-map('n', '<C-n>', '<Cmd>Neotree toggle<CR>')
+map('n', '<C-n>', '<Cmd>Neotree toggle<CR>', { desc = 'Neotree toggle' })
+
+-- Split sizing
+map('n', '<C-F>', '<C-w>|', { desc = 'Focus veritcal split' })
+map('n', '<C-L>', '<C-w>>', { desc = 'Increase veritcal split width' })
+map('n', '<C-H>', '<C-w><', { desc = 'Decrease veritcal split width' })
+map('n', '<C-J>', '<C-w>=', { desc = 'Equalize veritcal split width' })
