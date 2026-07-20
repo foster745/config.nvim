@@ -31,4 +31,13 @@ map('n', '<C-n>', '<Cmd>Neotree toggle<CR>', { desc = 'Neotree toggle' })
 map('n', '<C-F>', '<C-w>|', { desc = 'Focus veritcal split' })
 map('n', '<C-L>', '<C-w>>', { desc = 'Increase veritcal split width' })
 map('n', '<C-H>', '<C-w><', { desc = 'Decrease veritcal split width' })
-map('n', '<C-J>', '<C-w>=', { desc = 'Equalize veritcal split width' })
+map('n', '<C-M>', '<C-w>=', { desc = 'Equalize veritcal split width' })
+
+-- Navigation
+map('n', '<C-j>', '10j', { desc = 'Move cursor down 10 lines' })
+map('n', '<C-k>', '10k', { desc = 'Move cursor up 10 lines' })
+
+map('n', 'gv', function()
+  vim.cmd 'vsplit'
+  vim.lsp.buf.definition()
+end, { desc = 'Go to definition in vertical split' })
