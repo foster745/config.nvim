@@ -101,9 +101,9 @@ return {
       builtin.find_files { cwd = vim.fn.stdpath 'config' }
     end, { desc = '[S]earch Neovim [C]onfig files' })
 
-    -- Shortcut for searching notes
+    -- Search notes
     vim.keymap.set('n', '<leader>sn', function()
-      builtin.live_grep { cwd = '~/notepad/' }
-    end, { desc = '[S]earch [N]otepad' })
+      builtin.live_grep { cwd = '~/.notepad' }
+    end, { desc = '[S]earch [N]otes' })
   end,
 }
