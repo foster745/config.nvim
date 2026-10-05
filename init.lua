@@ -10,6 +10,9 @@ vim.g.have_nerd_font = true
 -- [[ Setting options ]]
 require 'options.options'
 
+-- [[ Setting options ]]
+require 'options.filetypes'
+
 -- [[ Setting Keymaps ]]
 require 'keymaps.keymaps'
 
